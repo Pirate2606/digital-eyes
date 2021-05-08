@@ -32,8 +32,6 @@ class _VideoCallsFeedState extends State<VideoCallsFeed> {
     return _users.get();
   }
 
-  Future getUsername() {}
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,7 +56,7 @@ class _VideoCallsFeedState extends State<VideoCallsFeed> {
                   itemBuilder: (BuildContext context, int index) {
                     Map<String, dynamic> data =
                         snapshot.data.docs[index].data();
-                    var username = data['usernName'];
+                    var username = data['userName'];
                     var channelName = data['channelName'];
                     return Column(
                       children: [

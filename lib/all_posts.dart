@@ -40,7 +40,7 @@ class _AllPostsState extends State<AllPosts> {
                   itemBuilder: (BuildContext context, int index) {
                     Map<String, dynamic> data =
                         snapshot.data.docs[index].data();
-                    var username = data['username'];
+                    var username = data['userName'];
                     var url = data['url'];
                     var name = data["name"];
                     return Column(
